@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LGridViewCell : UIButton
+@interface LGridViewCell : UIControl
 
 @end

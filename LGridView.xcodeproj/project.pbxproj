@@ -18,6 +18,7 @@
 		1496D9881603196E00599482 /* LGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494885F15FF0CDE005CAC8A /* LGridView.m */; };
 		1496D9891603196E00599482 /* LGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494888A15FF1477005CAC8A /* LGridViewCell.m */; };
 		1496D98A1603196E00599482 /* LRootRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494888D15FF1543005CAC8A /* LRootRowView.m */; };
+		1496D99016032E8600599482 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1496D98F16032E8600599482 /* DemoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		1496D976160318E100599482 /* demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-Prefix.pch"; sourceTree = "<group>"; };
 		1496D9851603195900599482 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo.h; sourceTree = "<group>"; };
 		1496D9861603195900599482 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo.m; sourceTree = "<group>"; };
+		1496D98F16032E8600599482 /* DemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				1494888015FF0CFB005CAC8A /* ViewController.h */,
 				1494888115FF0CFB005CAC8A /* ViewController.m */,
 				1496D96F160318E100599482 /* Supporting Files */,
+				1496D98F16032E8600599482 /* DemoCell.xib */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1496D973160318E100599482 /* InfoPlist.strings in Resources */,
+				1496D99016032E8600599482 /* DemoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@
 
 
 @optional
--(void) didSelectedCellOfGridView:(LGridViewCell *)gridView;
+-(void) didSelectedCellOfGridView:(LGridViewCell *)gridView atIndex:(NSInteger) index;
 
 @required
 

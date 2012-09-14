@@ -12,7 +12,7 @@
 @interface LGridView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
 
-@property(nonatomic,unsafe_unretained) id<LGridViewDelegate> gridDelegate;
+@property(nonatomic,assign) id<LGridViewDelegate> gridDelegate;
 
 
 @end

@@ -44,20 +44,22 @@
 }
 
 - (CGSize) sizeCellOfGridView:(LGridView *) grid {
-    return CGSizeMake(106.f, 45.f);
+    return CGSizeMake(106.f, 50.f);
 }
 
 -(LGridViewCell *) viewCellOfGridView:(LGridView *)gridview withColumn:(NSInteger) col withRow:(NSInteger) row {
-    Demo * cell = [[Demo alloc]initWithFrame:CGRectMake(5.f, 0.f, 106.f, 45.f)];
-//    cell.backgroundColor = [UIColor grayColor];
-    cell.label.textColor = [UIColor redColor];
-    cell.label.text = @"what is this";
+    Demo * cell = [[Demo alloc]initWithFrame:CGRectMake(0., 0.f, 105.f, 50.f)];
+    cell.backgroundColor = [UIColor grayColor];
+    cell.tag = col;
+     cell.label.text = @"demo";
     return cell;
 }
 
--(void)didSelectedCellOfGridView:(LGridView *)gridView {
-    NSLog(@"the gridview clicked ");
+-(void)didSelectedCellOfGridView:(LGridView *)gridView atIndex:(NSInteger)index {
+    NSLog(@"the gridview clicked %u",index);
 }
+
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);

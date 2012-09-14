@@ -17,16 +17,18 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.userInteractionEnabled = YES;
+//        self.userInteractionEnabled = YES;
         label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width,self.bounds.size.height)];
         label.backgroundColor = [UIColor clearColor];
         label.userInteractionEnabled = NO;
-        label.exclusiveTouch = NO;
+//        label.exclusiveTouch = NO;
         [self addSubview:label];
         [label release];
     }
     return self;
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

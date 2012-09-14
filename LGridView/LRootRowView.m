@@ -16,7 +16,7 @@
     if (self) {
         // Initialization code
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-        self.userInteractionEnabled = NO;
+        self.userInteractionEnabled = YES;
     }
     return self;
 }

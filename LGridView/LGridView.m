@@ -45,6 +45,7 @@
 
 
 -(void) setUp {
+    self.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.dataSource = self;
     self.delegate = self;
 }
@@ -98,7 +99,7 @@
             CGFloat width = [gridDelegate sizeCellOfGridView:self].width;
 //            CGFloat height = [gridDelegate sizeCellOfGridView:self].height;
             
-            cell.frame = CGRectMake( width * i, 0.f, width, height);
+            cell.frame = CGRectMake( width * i, 10.f, width, height);
             [cell addTarget:self action:@selector(cellPressed:) forControlEvents:UIControlEventTouchUpInside];
 			[cellContainer.contentView addSubview:cell];
 		}
@@ -108,8 +109,16 @@
 
 -(void) cellPressed:(id)sender {
     LGridViewCell *cell = (LGridViewCell *)sender;
-    [gridDelegate didSelectedCellOfGridView:cell];
+   int index =  cell.tag;
+    [gridDelegate didSelectedCellOfGridView:cell atIndex:index];
 }
+
+//-(void) cellPressed:(id)sender {
+//    LGridViewCell *cell = (LGridViewCell *)sender;
+//    NSLog(@"message..");
+//    [gridDelegate didSelectedCellOfGridView:cell];
+//}
+
 
 - (void)dealloc
 {
